@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: purple;
+            margin-left: 100px;
+            margin: 10px;
+            /* transition: width 2s, height 2s, transform 2s ; */
+            /* transform: rotate(20deg); */
+            /* transition-delay: 2s; */
+            transition: width 2s;
+color: white;
+
+        }
+        div:hover{
+            width: 300px;
+            /* height: 300px;
+            transform: rotate(180deg); */
+        }
+.box1{
+    transition-timing-function: ease;
+}
+.box2{
+    transition-timing-function: ease-in;
+    background-color: black;
+}
+.box3{
+    transition-timing-function: ease-out;
+    background-color: orange;
+}
+.box4{
+    transition-timing-function: ease-in-out;
+    background-color: magenta;
+}
+.box5{
+    transition-timing-function: linear;
+    background-color: blue;
+}
+    </style>
+</head>
+<body>
+    <div class="box box1">ease</div>
+    <div class="box box2">ease-in</div>
+    <div class="box box3">ease-out</div>
+    <div class="box box4">ease-in-out</div>
+    <div class="box box5">linear</div>
+</body>
+</html>
